@@ -1,7 +1,7 @@
 import pyiqa
 import time
 from torch.utils.data import DataLoader
-from datasets.CSRD_random import *
+from datasets.CSRD_datasets import *
 from tqdm import tqdm
 from models.Model_atp import DecloudingNetwork,Bottleneck
 from utils.utils_test import to_psnr, to_ssim_skimage
@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description="Evaluate Declouding Network")
 parser.add_argument('--dataset_root', type=str, required=True,
                     help='Root directory of the CSRD dataset')
 
-parser.add_argument('--level', type=str, choices=['Easy', 'Medium', 'Hard'], required=True,
+parser.add_argument('--level', type=str, choices=['easy', 'medium', 'hard'], required=True,
                     help='Difficulty level of CSRD dataset: Easy, Medium, or Hard')
 
 parser.add_argument('--season', type=str, choices=['spring', 'summer', 'fall', 'winter'], required=True,
@@ -34,13 +34,12 @@ decloud_net.to(device)
 
 brisque = pyiqa.create_metric('brisque', device=device)
 niqe = pyiqa.create_metric('niqe', device=device)
-
-decloudnet_weight_path = os.path.join(args.dataset_root,args.level,args.season,"decloud_net.pth")
+decloudnet_weight_path = os.path.join("output_result/CSRD_weights/",args.level,args.season,"decloud_net.pth")
 decloud_net.load_state_dict(torch.load(decloudnet_weight_path))
 
 print('===> Loading test datasets')
 
-test_datasets = TestDataset("/home/nbhuangzhixuan/mydataset",args.level,args.season)
+test_datasets = TestDataset(args.dataset_root,args.level,args.season)
 
 
 test_loader = DataLoader(dataset=test_datasets, batch_size=1, shuffle=False,
@@ -62,7 +61,7 @@ with torch.no_grad():
         hazy = data_val[0].to(device)
 
 
-        _, _, _, _,img,_,_ = decloud_net(hazy)
+        _, _, _, _,img,_, = decloud_net(hazy)
 
 
         psnr_list.extend(to_psnr(img, clean))
