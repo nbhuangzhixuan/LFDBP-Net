@@ -1,6 +1,6 @@
 # LFDBP-Net
 
-> **🚨 Note**: The paper is currently under submission. Once the paper is accepted, the training code will be made available as open-source. Stay tuned for updates! 🚀
+> **Note**: The paper is currently under submission. Once the paper is accepted, the training code will be made available as open-source. Stay tuned for updates! 🚀
 ## 📥 Download Datasets and Pretrained Models
 
 Download our datasets and pretrained model weights from Baidu Cloud:
