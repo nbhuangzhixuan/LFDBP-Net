@@ -3,7 +3,7 @@
 > **Note**: The paper is currently under submission. Once the paper is accepted, the training code will be made available as open-source. Stay tuned for updates! 🚀
 ## 📥 Download Datasets and Pretrained Models
 
-Download our datasets and pretrained model weights from Baidu Cloud:
+Download our datasets and pretrained model weights from Baidu Cloud Disk:
 
 🔗 **Link**: [https://pan.baidu.com/s/1sELBm-ZTP7d0MK5oudS_1g?pwd=k5vg](https://pan.baidu.com/s/1sELBm-ZTP7d0MK5oudS_1g?pwd=k5vg)  
 🔐 **Password**: `k5vg`
