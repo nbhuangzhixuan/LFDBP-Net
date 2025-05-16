@@ -51,7 +51,7 @@ python test_TCD.py --dataset_root ./dataset/CSRD
 ## 📸 Qualitative Results
 
 ### 🔹 **Results on CSRD-Easy Challenge Testing Images**
-![CSRD-Easy Image 1](visual_image/CSRD-EASY.png)
+![CSRD-Easy Image 1](visual_image/CSRD-Easy.png)
 
 
 ### 🔹 **Results on CSRD-Medium Challenge Testing Images**
