@@ -13,7 +13,7 @@ Download our datasets and pretrained model weights from Baidu Cloud Disk:
 
 ## ☁️️ Run Test
 
-Use the following commands to evaluate different datasets:
+Use the following commands to test different datasets:
 
 ### 🔹 CSRD-CR
 
@@ -47,3 +47,24 @@ python test_RICE2.py --dataset_root ./dataset/CSRD
 ```bash
 python test_TCD.py --dataset_root ./dataset/CSRD
 ```
+
+## 📸 Qualitative Results
+
+### 🔹 **Results on CSRD-Easy Challenge Testing Images**
+![CSRD-Easy Image 1](visual_image/CSRD-EASY.png)
+
+
+### 🔹 **Results on CSRD-Medium Challenge Testing Images**
+![CSRD-Medium Image 1](visual_image/CSRD-Medium.png)
+
+
+### 🔹 **Results on CSRD-Hard Challenge Testing Images**
+![CSRD-Hard Image 1](visual_image/CSRD-Hard.png)
+
+
+### 🔹 **Results on RICE Challenge Testing Images**
+![RICE Image 1](visual_image/RICE.png)
+
+
+### 🔹 **Results on TCD Challenge Testing Images**
+![TCD Image 1](visual_image/TCD.png)
