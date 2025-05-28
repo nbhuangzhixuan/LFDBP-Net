@@ -1,4 +1,9 @@
 # LFDBP-Net
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
 > **Note**: The paper is currently under submission. Once the paper is accepted, the training code will be made available as open-source. Stay tuned for updates! 🚀
 ## 📥 Download Datasets and Pretrained Models
