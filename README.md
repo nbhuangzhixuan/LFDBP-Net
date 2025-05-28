@@ -1,9 +1,4 @@
 # LFDBP-Net
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 
 > **Note**: The paper is currently under submission. Once the paper is accepted, the training code will be made available as open-source. Stay tuned for updates! 🚀
 ## 📥 Download Datasets and Pretrained Models
@@ -15,6 +10,17 @@ Download our CSRD-CR dataset and pretrained model weights from Baidu Cloud Disk:
 
 
 ---
+
+## 🛠️ Dependencies
+
+To run the code, make sure you have the following dependencies installed:
+
+| **Dependency**  | **Version**     |
+|-----------------|-----------------|
+| **Pytorch**     | 2.3.0           |
+| **Python**      | 3.9.19          |
+| **CUDA**        | 12.6            |
+| **Ubuntu**      | 22.04           |
 
 ## ☁️️ Run Test
 
