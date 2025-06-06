@@ -109,7 +109,7 @@ class TestDataset(Dataset):
 
         img_Cloudy_path = self.image_paths[idx]
         img_Cloudy_path_split = img_Cloudy_path.split("_", 2)
-        temp = img_Cloudy_path_split[2]
+        temp = img_Cloudy_path_split[1] + "_" + img_Cloudy_path_split[2]
         img_GT_path = os.path.join(self.root_dir, self.level, self.season, "test", "clean", temp)
         with rasterio.open(img_Cloudy_path) as img_c:
             img_Cloudy = img_c.read()
